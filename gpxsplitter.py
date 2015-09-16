@@ -57,10 +57,8 @@ def go(document):
     gpx_namespaces = ['http://www.topografix.com/GPX/1/0',
                       'http://www.topografix.com/GPX/1/1']
 
-    # FIXME: Turn this into an exception
     if gpx_ns not in gpx_namespaces:
-        print >> sys.stderr, 'Unable to determine GPX version (neither 1.0 or 1.1)' % prog_name
-        sys.exit(1)
+        raise StopIteration('Unable to determine GPX version (neither 1.0 or 1.1)')
 
     track_objects = []
     track_elements = document.findall('{%s}trk' % gpx_ns)
@@ -158,6 +156,9 @@ if __name__ == '__main__':
 
         go(document)
 
+    except StopIteration, msg:
+        print(msg, file=sys.stderr)
+        sys.exit(1)
     except (NameError, IndexError):
         print('Usage: %s filename.gpx' % prog_name, file=sys.stderr)
         sys.exit(1)
