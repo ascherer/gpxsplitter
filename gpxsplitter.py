@@ -38,11 +38,8 @@ def determineBoundingBox(points):
     lats = [p.attrib['lat'] for p in points]
     lons = [p.attrib['lon'] for p in points]
 
-    r = {}
-    r['minlat'], r['maxlat'] = min(lats), max(lats)
-    r['minlon'], r['maxlon'] = max(lons), min(lons)
-
-    return r
+    return {'minlat':min(lats), 'maxlat':max(lats),
+            'minlon':max(lons), 'maxlon':min(lons)}
 
 
 def go(document):
