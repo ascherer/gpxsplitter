@@ -161,7 +161,7 @@ if __name__ == '__main__':
 
         go(document)
 
-    except StopIteration, msg:
+    except StopIteration as msg:
         print(msg, file=sys.stderr)
         sys.exit(1)
     except (NameError, IndexError):
