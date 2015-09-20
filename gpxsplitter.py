@@ -54,10 +54,8 @@ def go(document):
         if ns in t:
             gpx_ns = ns
 
-    # FIXME: Turn this into an exception
     if gpx_ns is None:
-        print >> sys.stderr, 'Unable to determine GPX version (neither 1.0 or 1.1)' % prog_name
-        sys.exit(1)
+        raise StopIteration('Unable to determine GPX version (neither 1.0 or 1.1)')
 
     track_objects = []
     track_elements = document.findall('{%s}trk' % gpx_ns)
@@ -154,6 +152,9 @@ if __name__ == '__main__':
 
         go(document)
 
+    except StopIteration as msg:
+        print(msg, file=sys.stderr)
+        sys.exit(1)
     except (NameError, IndexError):
         print('Usage: %s filename.gpx' % prog_name, file=sys.stderr)
         sys.exit(1)
