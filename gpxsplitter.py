@@ -38,17 +38,8 @@ def determineBoundingBox(points):
     lats = [p.attrib['lat'] for p in points]
     lons = [p.attrib['lon'] for p in points]
 
-    lats.sort()
-    lons.sort()
-
-    r = {}
-    r['minlat'], r['maxlat'] = lats[0], lats[-1]
-
-    # Because we things kept as strings, sort is lexical instead of
-    # numeric. Negative numbers were sorted in reverse
-    r['minlon'], r['maxlon'] = lons[-1], lons[0]
-
-    return r
+    return {'minlat':min(lats), 'maxlat':max(lats),
+            'minlon':max(lons), 'maxlon':min(lons)}
 
 
 def go(document):
