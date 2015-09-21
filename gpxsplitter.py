@@ -35,11 +35,11 @@ def determineBoundingBox(points):
     """Determine the bounding box of a set of points.
     """
     # This is slow. But works correctly.
-    lats = [p.attrib['lat'] for p in points]
-    lons = [p.attrib['lon'] for p in points]
+    lats = [float(p.attrib['lat']) for p in points]
+    lons = [float(p.attrib['lon']) for p in points]
 
-    return {'minlat':min(lats), 'maxlat':max(lats),
-            'minlon':max(lons), 'maxlon':min(lons)}
+    return {'minlat':str(min(lats)), 'maxlat':str(max(lats)),
+            'minlon':str(min(lons)), 'maxlon':str(max(lons))}
 
 
 def go(document):
