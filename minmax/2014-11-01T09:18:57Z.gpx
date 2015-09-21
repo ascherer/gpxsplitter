@@ -1,7 +1,7 @@
 <gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mtk="http://www.rigacci.org/gpx/MtkExtensions/v1" version="1.1" creator="MTKBabel - http://www.rigacci.org/" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd                       http://www.rigacci.org/gpx/MtkExtensions/v1 http://www.rigacci.org/gpx/MtkExtensions/v1/MtkExtensionsv1.xsd">
 <metadata>
   <time>2014-11-01T09:18:57Z</time>
-  <bounds minlat="-10.0" minlon="15.0" maxlat="5.0" maxlon="-10.0"/>
+  <bounds minlat="-15.0" minlon="-10.0" maxlat="5.0" maxlon="15.0"/>
 </metadata>
 <trk>
   <name>2014-11-01T09:18:25Z</name>
