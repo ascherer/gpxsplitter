@@ -35,18 +35,15 @@ def determineBoundingBox(points):
     """Determine the bounding box of a set of points.
     """
     # This is slow. But works correctly.
-    lats = [p.attrib['lat'] for p in points]
-    lons = [p.attrib['lon'] for p in points]
+    lats = [float(p.attrib['lat']) for p in points]
+    lons = [float(p.attrib['lon']) for p in points]
 
     lats.sort()
     lons.sort()
 
     r = {}
-    r['minlat'], r['maxlat'] = lats[0], lats[-1]
-
-    # Because we things kept as strings, sort is lexical instead of
-    # numeric. Negative numbers were sorted in reverse
-    r['minlon'], r['maxlon'] = lons[-1], lons[0]
+    r['minlat'], r['maxlat'] = str(lats[0]), str(lats[-1])
+    r['minlon'], r['maxlon'] = str(lons[0]), str(lons[-1])
 
     return r
 
