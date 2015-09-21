@@ -1,0 +1,59 @@
+<gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mtk="http://www.rigacci.org/gpx/MtkExtensions/v1" version="1.1" creator="MTKBabel - http://www.rigacci.org/" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd                       http://www.rigacci.org/gpx/MtkExtensions/v1 http://www.rigacci.org/gpx/MtkExtensions/v1/MtkExtensionsv1.xsd">
+<metadata>
+  <time>2014-11-01T09:18:57Z</time>
+  <bounds minlat="-10.0" minlon="15.0" maxlat="5.0" maxlon="-10.0"/>
+</metadata>
+<trk>
+  <name>2014-11-01T09:18:25Z</name>
+<trkseg>
+<trkpt lat="-10.0" lon="-10.0">
+  <ele>334.252747</ele>
+  <time>2014-11-01T09:18:25Z</time>
+  <type>DISTANCE</type>
+  <fix>3d</fix>
+  <extensions>
+    <mtk:wptExtension>
+      <mtk:valid>sps</mtk:valid>
+      <mtk:speed>22.537603</mtk:speed>
+    </mtk:wptExtension>
+  </extensions>
+</trkpt>
+<trkpt lat="5.0" lon="-5.0">
+  <ele>333.165619</ele>
+  <time>2014-11-01T09:18:33Z</time>
+  <type>DISTANCE</type>
+  <fix>3d</fix>
+  <extensions>
+    <mtk:wptExtension>
+      <mtk:valid>sps</mtk:valid>
+      <mtk:speed>24.877300</mtk:speed>
+    </mtk:wptExtension>
+  </extensions>
+</trkpt>
+<trkpt lat="5.0" lon="10.0">
+  <ele>332.925507</ele>
+  <time>2014-11-01T09:18:41Z</time>
+  <type>DISTANCE</type>
+  <fix>3d</fix>
+  <extensions>
+    <mtk:wptExtension>
+      <mtk:valid>sps</mtk:valid>
+      <mtk:speed>25.415138</mtk:speed>
+    </mtk:wptExtension>
+  </extensions>
+</trkpt>
+<trkpt lat="-15.0" lon="15.0">
+  <ele>333.124451</ele>
+  <time>2014-11-01T09:18:57Z</time>
+  <type>DISTANCE</type>
+  <fix>3d</fix>
+  <extensions>
+    <mtk:wptExtension>
+      <mtk:valid>sps</mtk:valid>
+      <mtk:speed>19.152020</mtk:speed>
+    </mtk:wptExtension>
+  </extensions>
+</trkpt>
+</trkseg>
+</trk>
+</gpx>
